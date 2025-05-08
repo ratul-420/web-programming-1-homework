@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Table CRUD</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="table.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Web-programming-1 Lecture Homework</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="table.html">Table</a></li>
+      <li><a href="html5.html">HTML5</a></li>
+      <li><a href="chartjs.html">ChartJS</a></li>
+      <li><a href="ajax.html">AJAX</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+      <li><a href="react.html">React</a></li>
+    </ul>
+  </nav>
+  <aside>
+    <h3>Instructions</h3>
+    <ul>
+      <li>Fill all form fields before submitting.</li>
+      <li>Click a column header to sort the table by that column.</li>
+      <li>Use the search box to filter any column dynamically.</li>
+      <li>Click "Edit" to modify a row, or "Delete" to remove it.</li>
+      <li>Validation: All fields are required with specific length/limits.</li>
+    </ul>
+  </aside>
+  <div id="content">
+    <h2>CRUD Table</h2>
+    <form id="crud-form">
+      <input type="text" id="name" placeholder="Name" required minlength="2" maxlength="20">
+      <input type="number" id="age" placeholder="Age" required min="1" max="120">
+      <input type="text" id="city" placeholder="City" required minlength="2" maxlength="20">
+      <input type="text" id="email" placeholder="Email" required minlength="5" maxlength="30">
+      <button type="submit">Add/Update</button>
+      <input type="hidden" id="edit-index">
+    </form>
+
+    <input type="text" id="search" placeholder="Search...">
+
+    <table id="crud-table" border="1">
+      <thead>
+        <tr>
+          <th data-col="name">Name</th>
+          <th data-col="age">Age</th>
+          <th data-col="city">City</th>
+          <th data-col="email">Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <footer>
+    Created by Ratul (H1566N) & Aminul (PQFBDZ)
+  </footer>
+</body>
+</html>
