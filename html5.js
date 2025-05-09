@@ -33,6 +33,7 @@ function startWorker() {
 
 // Geolocation
 function getLocation() {
+function getLocation() { 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(position => {
       const { latitude, longitude } = position.coords;
@@ -42,6 +43,7 @@ function getLocation() {
     });
   } else {
     document.getElementById("geoResult").textContent = "Geolocation not supported.";
+    document.getElementById("geoResult").textContent = "Geolocation not  supported.";
   }
 }
 
