@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React SPA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Web-programming-1 Lecture Homework</h1>
+  </header>
+
+  <!-- Navigation Section -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="table.html">Table</a></li>
+      <li><a href="html5.html">HTML5</a></li>
+      <li><a href="chartjs.html">ChartJS</a></li>
+      <li><a href="ajax.html">AJAX</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+      <li class="active"><a href="react.html">React</a></li>  <!-- React menu set as active -->
+    </ul>
+  </nav>
+
+  <!-- Aside Section -->
+  <aside>
+    <h3>Instructions</h3>
+    <ul>
+      <li>Click a button to switch between apps: Calculator or TicTacToe.</li>
+      <li>The default app loaded is Calculator.</li>
+    </ul>
+  </aside>
+
+  <!-- Main Content Section -->
+  <div id="content">
+    <h2>React SPA</h2>
+    <div>
+      <button onclick="showApp('calc')">Calculator</button>
+      <button onclick="showApp('ttt')">TicTacToe</button>
+    </div>
+    <div id="react-root"></div>
+  </div>
+
+  <!-- React App JS for Calculator and TicTacToe -->
+  <script type="text/babel" src="react/calculator/app.js"></script>
+  <script type="text/babel" src="react/tictactoe/app.js"></script>
+
+  <!-- React App Switcher Script -->
+  <script type="text/javascript">
+    function showApp(app) {
+      if (app === 'calc') {
+        ReactDOM.render(React.createElement(Calculator), document.getElementById('react-root'));
+      } else {
+        ReactDOM.render(React.createElement(TicTacToe), document.getElementById('react-root'));
+      }
+    }
+    showApp('calc');  // Load the Calculator app by default
+  </script>
+</body>
+</html>
