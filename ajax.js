@@ -1,4 +1,4 @@
-const code = "ABC123xyz789"; // Replace with your Neptun+secret
+const code = "H1566NBAAL28"; 
 const api = "http://gamf.nhely.hu/ajax2/";
 
 function ajaxPost(params, cb) {
