@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ChartJS Table</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="chartjs.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Web-programming-1 Lecture Homework</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="table.html">Table</a></li>
+      <li><a href="html5.html">HTML5</a></li>
+      <li class="active"><a href="chartjs.html">ChartJS</a></li>
+      <li><a href="ajax.html">AJAX</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+      <li><a href="react.html">React</a></li>
+    </ul>
+  </nav>
+  <aside>
+    <h3>Instructions</h3>
+    <ul>
+      <li>Click any row in the table to visualize it as a chart.</li>
+      <li>Each chart will dynamically reflect the selected row's values.</li>
+    </ul>
+  </aside>
+  <div id="content">
+    <h2>ChartJS Table</h2>
+    <table id="numTable" border="1">
+      <tbody>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+        <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+        <tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+        <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+      </tbody>
+    </table>
+    <p>Select a row to display as a chart:</p>
+    <canvas id="myChart" width="400" height="200"></canvas>
+  </div>
+  <footer>
+    Created by Ratul (H1566N) & Aminul (PQFBDZ)
+  </footer>
+</body>
+</html>
