@@ -21,6 +21,7 @@ function renderTable(filter = "") {
       <td>${row.city}</td>
       <td>${row.email}</td>
       <td>
+      <td> 
         <button onclick="editRow(${i})">Edit</button>
         <button onclick="deleteRow(${i})">Delete</button>
       </td>
