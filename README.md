@@ -1,5 +1,3 @@
-# web-programming-1-homework
-lecture
 # Web-programming-1 Lecture Homework
 
 ## Authors
