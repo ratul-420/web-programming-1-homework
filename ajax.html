@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX CRUD</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="ajax.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Web-programming-1 Lecture Homework</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="table.html">Table</a></li>
+      <li><a href="html5.html">HTML5</a></li>
+      <li><a href="chartjs.html">ChartJS</a></li>
+      <li class="active"><a href="ajax.html">AJAX</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+      <li><a href="react.html">React</a></li>
+    </ul>
+  </nav>
+  <aside>
+    <h3>Instructions</h3>
+    <ul>
+      <li>Fill out the form to create or update user data.</li>
+      <li>Use the ID field below to fetch or delete specific user data.</li>
+      <li>Uses <code>https://dummyjson.com/users</code> as backend.</li>
+    </ul>
+  </aside>
+  <div id="content">
+    <h2>AJAX CRUD</h2>
+    <form id="ajaxForm">
+      <input type="text" id="name" placeholder="Name" maxlength="30" required>
+      <input type="text" id="height" placeholder="Height" maxlength="30" required>
+      <input type="text" id="weight" placeholder="Weight" maxlength="30" required>
+      <input type="hidden" id="id">
+      <button type="submit">Create/Update</button>
+    </form>
+    <div style="margin-top: 10px;">
+      <input type="text" id="updateId" placeholder="ID for read/delete">
+      <button onclick="getDataForId()">Get by ID</button>
+      <button onclick="deleteRecord()">Delete by ID</button>
+    </div>
+    <h3>Result</h3>
+    <div id="ajaxResult" style="white-space: pre-wrap; background: #f9f9f9; padding: 10px;"></div>
+  </div>
+  <footer>
+    Created by Ratul (H1566N) & Aminul (PQFBDZ)
+  </footer>
+</body>
+</html>
