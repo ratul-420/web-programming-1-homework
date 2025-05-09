@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Features</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="html5.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Web-programming-1 Lecture Homework</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="table.html">Table</a></li>
+      <li class="active"><a href="html5.html">HTML5</a></li>
+      <li><a href="chartjs.html">ChartJS</a></li>
+      <li><a href="ajax.html">AJAX</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+      <li><a href="react.html">React</a></li>
+    </ul>
+  </nav>
+  <aside>
+    <h3>Instructions</h3>
+    <ul>
+      <li>Test Web Storage with Save/Load.</li>
+      <li>Start a Web Worker for background tasks.</li>
+      <li>Get your current location using Geolocation.</li>
+      <li>Try dragging and dropping the red box.</li>
+      <li>Canvas and SVG showcase graphics features.</li>
+    </ul>
+  </aside>
+  <div id="content">
+    <h2>HTML5 Features</h2>
+
+    <section>
+      <h3>Web Storage</h3>
+      <input id="storageInput" placeholder="Type and Save">
+      <button onclick="saveStorage()">Save</button>
+      <button onclick="loadStorage()">Load</button>
+      <span id="storageResult"></span>
+    </section>
+
+    <section>
+      <h3>Web Worker</h3>
+      <button onclick="startWorker()">Start Worker</button>
+      <span id="workerResult"></span>
+    </section>
+
+    <section>
+      <h3>Geolocation</h3>
+      <button onclick="getLocation()">Get Location</button>
+      <span id="geoResult"></span>
+    </section>
+
+    <section>
+      <h3>Drag and Drop</h3>
+      <div id="drag1" draggable="true" ondragstart="drag(event)"
+           style="width:50px;height:50px;background:red;"></div>
+      <div id="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"
+           style="width:100px;height:100px;background:lightgray;margin-top:10px;"></div>
+    </section>
+
+    <section>
+      <h3>Canvas</h3>
+      <canvas id="myCanvas" width="100" height="100" style="border:1px solid #000;"></canvas>
+    </section>
+
+    <section>
+      <h3>SVG</h3>
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+      </svg>
+    </section>
+  </div>
+
+  <footer>
+    Created by Ratul (H1566N) & Aminul (PQFBDZ)
+  </footer>
+</body>
+</html>
