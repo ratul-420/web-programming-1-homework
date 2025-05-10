@@ -23,7 +23,7 @@
       <li><a href="chartjs.html">ChartJS</a></li>
       <li><a href="ajax.html">AJAX</a></li>
       <li><a href="oojs.html">OOJS</a></li>
-      <li class="active"><a href="react.html">React</a></li>  <!-- React menu set as active -->
+      <li class="active"><a href="react.html">React</a></li>
     </ul>
   </nav>
 
@@ -59,7 +59,10 @@
         ReactDOM.render(React.createElement(TicTacToe), document.getElementById('react-root'));
       }
     }
-    showApp('calc');  // Load the Calculator app by default
+    // Show Calculator by default
+    window.onload = function() {
+      showApp('calc');
+    };
   </script>
 </body>
 </html>
