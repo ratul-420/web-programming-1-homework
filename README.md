@@ -22,7 +22,7 @@ This project is the homework for Web-programming-1 Lecture. It demonstrates HTML
 
 ## How to Run
 
-- Open (http://gamf4.nhely.hu/www/) in your browser.
+- Open (http://gamf4.nhely.hu/www/index.html) in your browser.
 
 ## Special Instructions
 
