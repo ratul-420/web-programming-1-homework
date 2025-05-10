@@ -22,7 +22,7 @@ This project is the homework for Web-programming-1 Lecture. It demonstrates HTML
 
 ## How to Run
 
-- Open [GitHub Pages link here](https://github.com/ratul-420/web-programming-1-homework) in your browser.
+- Open (http://gamf4.nhely.hu/www/) in your browser.
 
 ## Special Instructions
 
